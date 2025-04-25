@@ -17,14 +17,18 @@ namespace PerfectGas
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void FormGas_MouseDown(object sender, MouseEventArgs e)
         {
-            Ball ball = new Ball(e.X, e.Y, this);
+            if (e.Button == MouseButtons.Left)
+            {
+                Ball ball = new Ball(e.X, e.Y, this);
+            }
+            else
+            {
+                MoveBall moveBall = new MoveBall(e.X, e.Y, this);
+            }
         }
+
     }
 }
