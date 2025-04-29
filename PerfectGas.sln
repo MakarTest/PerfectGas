@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
+VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfectGas", "PerfectGas\PerfectGas.csproj", "{008B0FCF-5B96-4173-8DDE-32730734F96C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroHockey1", "AeroHockey1\AeroHockey1.csproj", "{8A8C1389-AD5D-4FE8-8BAC-28B8A5E65AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{008B0FCF-5B96-4173-8DDE-32730734F96C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{008B0FCF-5B96-4173-8DDE-32730734F96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{008B0FCF-5B96-4173-8DDE-32730734F96C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8C1389-AD5D-4FE8-8BAC-28B8A5E65AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8C1389-AD5D-4FE8-8BAC-28B8A5E65AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8C1389-AD5D-4FE8-8BAC-28B8A5E65AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8C1389-AD5D-4FE8-8BAC-28B8A5E65AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

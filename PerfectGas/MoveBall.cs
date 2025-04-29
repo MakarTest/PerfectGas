@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace PerfectGas
 {
-    class MoveBall : Ball
+    public class MoveBall : Ball
     { 
         double vx = -5, vy = -5;
-        Timer timer;
+        protected Timer timer;
 
         public MoveBall(int x, int y, Form form) : base(x, y, form)
         { 

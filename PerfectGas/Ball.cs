@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace PerfectGas
 {
-    class Ball: PictureBox
+    public class Ball: PictureBox
     {
         static Random random;
 
