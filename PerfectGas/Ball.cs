@@ -7,8 +7,8 @@ namespace PerfectGas
     {
         static Random random;
 
-        protected double x, y;
-        int radius;
+        public double x, y;
+        protected int radius;
         protected Form form;
 
         public Ball()
@@ -36,6 +36,18 @@ namespace PerfectGas
         {
             this.Top = (int)y - radius;
             this.Left = (int)x - radius;
+        }
+
+        public void SetPicture(string fileName)
+        {
+            this.Load(fileName);
+        }
+
+        public void SetPoint(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+            this.Show();
         }
     }
 }
