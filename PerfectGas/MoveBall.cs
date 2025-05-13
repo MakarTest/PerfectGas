@@ -7,9 +7,10 @@ namespace PerfectGas
 {
     public class MoveBall : Ball
     { 
-        double vx = -5, vy = -5;
+        protected double vx = -5, vy = -5;
+        protected double friction = 0.99;
         protected Timer timer;
-        List<Ball> collisionObjects = new List<Ball>();
+        protected List<Ball> collisionObjects = new List<Ball>();
 
         public MoveBall(int x, int y, Form form) : base(x, y, form)
         { 
@@ -25,19 +26,19 @@ namespace PerfectGas
             Show();
         }
 
-        public void Move()
+        public virtual void Move()
         {
+            vx = vx * friction;
+            vy = vy * friction;
             x = x + vx;
             y = y + vy;
             foreach (var collisionObject in collisionObjects)
             {
-                double distance = Math.Sqrt(Math.Pow((this.x - collisionObject.x), 2) 
-                                            + Math.Pow((this.y - collisionObject.y), 2));
+                double distance = Math.Sqrt(Math.Pow((this.x - collisionObject.x), 2) + Math.Pow((this.y - collisionObject.y), 2));
                 if (distance < 2 * this.radius)
                 {
-                    this.Enabled = true;
-                    vx = -vx;
-                    vy = -vy;
+                    vx = this.x - collisionObject.x;
+                    vy = this.y - collisionObject.y;
                 }
             }
 

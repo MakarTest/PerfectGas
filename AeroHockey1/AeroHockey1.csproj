@@ -57,6 +57,7 @@
     <Compile Include="Puck .cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="EngineGame.cs" />
     <Compile Include="Stick.cs">
       <SubType>Component</SubType>
     </Compile>
